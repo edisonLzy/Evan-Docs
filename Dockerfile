@@ -1,1 +1,6 @@
-FORM node
+FROM node
+MAINTAINER 656603135@qq.com
+COPY . /docs
+WORKDIR /docs
+RUN npm install
+EXPOSE 8888
